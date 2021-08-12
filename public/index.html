@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Challenge | JSChallenge</title>
+  <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+
+  <main>
+    <h1>¿Te combiene más el cine o las plataformas de streaming?</h1>
+    <h3>Averigualo ahora mismo</h3>
+    <form action="">
+      <div>
+        <label for="movies"><p>¿Cuántas películas ves al mes?</p></label>
+        <input type="number" id="movies" placeholder="Número de películas">
+      </div>
+
+    <div>
+      <label for="series"><p>¿Cuántas series ves al mes?</p></label>
+      <input type="number" id="series"placeholder="Número de series">
+    </div>
+
+    <section>
+      <p>¿En cuales plataformas de streaming puedes ver tus series o peliculas?</p>
+
+      <input type="checkbox" id="disney" value="true"> <label for="disney">Disney+ </label>          <br>
+      <input type="checkbox" id="netflix" value="true"> <label for="netflix">Netflix </label>        <br>
+      <input type="checkbox" id="amazon" value="true"> <label for="amazon">Amazon Prime  </label>    <br>
+      <input type="checkbox" id="hbo"> <label for="hbo">HBO max  </label>                  <br>
+    </section>
+
+    <button type="button" onclick="send()">Send</button>
+    <a href="./index.html">Borrar datos</a>
+  </form>
+
+
+  <section id="solution">
+  </section>
+
+  </main>
+  <footer></footer>
+  <script src="../src/index.js"></script>
+</body>
+</html>
