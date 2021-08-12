@@ -39,7 +39,7 @@ const streamingPlatform = [
 
   //Create Elements
   const answerNode = document.querySelector('section#solution');
-  const answerTitle = document.createElement('h2');
+  const answerTitle = document.createElement('h3');
   const answer = document.createElement('p');
   const cineCost = document.createElement('p');
   const streamingCost = document.createElement('p');

@@ -15,7 +15,7 @@ body {
   min-width: 320px;
   width: 95%;
   max-width: 1024px;
-  height: 100vh;
+  height: 100%;
   max-width: 1024px;
   background-color: whitesmoke;
 }
@@ -26,14 +26,27 @@ main {
   padding: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  text-align: center;
+
 }
 
 h1{
-  margin: 50px;
+  margin: 18px;
   font-size: 3rem;
+  color: rgb(17, 22, 94)
 }
 h3{
-  margin: 30px;
+  margin: 12px;
+  font-size: 2.4rem;
+}
+
+p, label, a, form, div{
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+input {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
 }

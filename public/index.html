@@ -10,35 +10,39 @@
 <body>
 
   <main>
-    <h1>¿Te combiene más el cine o las plataformas de streaming?</h1>
+    <h1>¿Team cine o team streaming?</h1>
     <h3>Averigualo ahora mismo</h3>
-    <form action="">
+    <section class="container">
+      <form action="">
+        <div>
+          <label for="movies">¿Cuántas películas ves al mes?</label>
+          <input type="number" id="movies" placeholder="Número de películas">
+        </div>
+
       <div>
-        <label for="movies"><p>¿Cuántas películas ves al mes?</p></label>
-        <input type="number" id="movies" placeholder="Número de películas">
+        <label for="series">¿Cuántas series ves al mes?</label>
+        <input type="number" id="series"placeholder="Número de series">
       </div>
 
-    <div>
-      <label for="series"><p>¿Cuántas series ves al mes?</p></label>
-      <input type="number" id="series"placeholder="Número de series">
-    </div>
+      <section>
+        <p>¿En cuales plataformas de streaming puedes ver tus series o peliculas?</p>
 
-    <section>
-      <p>¿En cuales plataformas de streaming puedes ver tus series o peliculas?</p>
+        <div>
+          <input type="checkbox" id="disney" value="true"> <label for="disney">Disney+ </label>          <br>
+          <input type="checkbox" id="netflix" value="true"> <label for="netflix">Netflix </label>        <br>
+          <input type="checkbox" id="amazon" value="true"> <label for="amazon">Amazon Prime  </label>    <br>
+          <input type="checkbox" id="hbo"> <label for="hbo">HBO max  </label>
+        </div>                 
+      </section>
 
-      <input type="checkbox" id="disney" value="true"> <label for="disney">Disney+ </label>          <br>
-      <input type="checkbox" id="netflix" value="true"> <label for="netflix">Netflix </label>        <br>
-      <input type="checkbox" id="amazon" value="true"> <label for="amazon">Amazon Prime  </label>    <br>
-      <input type="checkbox" id="hbo"> <label for="hbo">HBO max  </label>                  <br>
+      <button type="button" onclick="send()">Send</button>
+      <a href="./index.html">Borrar datos</a>
+    </form>
+
+
+    <section id="solution">
     </section>
-
-    <button type="button" onclick="send()">Send</button>
-    <a href="./index.html">Borrar datos</a>
-  </form>
-
-
-  <section id="solution">
-  </section>
+    </section>
 
   </main>
   <footer></footer>
