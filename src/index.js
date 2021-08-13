@@ -1,4 +1,16 @@
+const formatPrice = (price) => {
+
+  const newPrice = new window.Intl.NumberFormat('en-EN', {
+    style: 'currency',
+    currency:'USD'
+  }).format(price)
+
+  return newPrice
+}
+
+
 function send() {
+
   const numberMovies = document.getElementById("movies");
   const numberMoviesValue = numberMovies.value;
   const numberSeries = document.getElementById("series");
@@ -7,35 +19,38 @@ function send() {
   const netflixPlatform = document.getElementById("netflix");
   const amazonPlatform = document.getElementById("amazon");
   const hboPlatform = document.getElementById("hbo");
-
-const streamingPlatform = [
-  {
-    'name': 'disneyPlatformValue',
-    'value': disneyPlatform.checked
-  },
-  {
-    'name': 'netflixPlatformValue',
-    'value': netflixPlatform.checked
-  },
-  {
-    'name': 'amazonPlatformValue',
-    'value': amazonPlatform.checked },
-  {
-    'name': 'hboPlatformValue',
-    'value': hboPlatform.checked
-  }
-]
+  
+  const streamingPlatform = [
+    {
+      'name': 'disneyPlatformValue',
+      'value': disneyPlatform.checked
+    },
+    {
+      'name': 'netflixPlatformValue',
+      'value': netflixPlatform.checked
+    },
+    {
+      'name': 'amazonPlatformValue',
+      'value': amazonPlatform.checked },
+    {
+      'name': 'hboPlatformValue',
+      'value': hboPlatform.checked
+    }
+  ]
 
 
   //Costs
-  const monthCineCost = Math.floor(numberMoviesValue) * 3 ;
+  const monthCineValue = Math.floor(numberMoviesValue) * 3 ;
+  const monthCineCost = formatPrice(monthCineValue);
+  let streamingPlatformValue = 0;
   let streamingPlatformCosts = 0;
+
   streamingPlatform.forEach(item => {
     if (item.value == true) {
-      streamingPlatformCosts = streamingPlatformCosts + 2.75
+      streamingPlatformValue = streamingPlatformCosts + 2.75;
     }
   })
-
+  streamingPlatformCosts = formatPrice(streamingPlatformValue)
 
   //Create Elements
   const answerNode = document.querySelector('section#solution');
