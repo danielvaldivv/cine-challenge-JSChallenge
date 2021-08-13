@@ -1,0 +1,20 @@
+{
+  "name": "cine-challenge-jschallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielvaldivv/cine-challenge-JSChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielvaldivv/cine-challenge-JSChallenge/issues"
+  },
+  "homepage": "https://github.com/danielvaldivv/cine-challenge-JSChallenge#readme"
+}

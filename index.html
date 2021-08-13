@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Challenge | JSChallenge</title>
+  <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+
+  <main>
+    <h1>¿Team cine o team streaming?</h1>
+    <h3>En este proyecto encontrarás una calculadora para encontrar responder a Qué es más económico, el cine o el streaming.</h3>
+    <section class="container">
+      <form action="">
+        <div>
+          <label for="movies">¿Cuántas películas ves al mes?</label>
+          <input type="number" id="movies" placeholder="Número de películas">
+        </div>
+
+      <div>
+        <label for="series">¿Cuántas series ves al mes?</label>
+        <input type="number" id="series"placeholder="Número de series">
+      </div>
+
+      <section>
+        <p>¿En cuales plataformas de streaming puedes ver tus series o peliculas?</p>
+
+        <div class="container__checkbox">
+          <input class="container__checkbox--element" type="checkbox" id="disney" value="true"> <label for="disney">Disney+ </label>          <br>
+          <input class="container__checkbox--element" type="checkbox" id="netflix" value="true"> <label for="netflix">Netflix </label>        <br>
+          <input class="container__checkbox--element" type="checkbox" id="amazon" value="true"> <label for="amazon">Amazon Prime  </label>    <br>
+          <input class="container__checkbox--element" type="checkbox" id="hbo"> <label for="hbo">HBO max  </label>
+        </div>
+      </section>
+
+      <button type="button" onclick="send()">Send</button>
+      <a href="./index.html">Borrar datos</a>
+    </form>
+
+
+    <section id="solution">
+    </section>
+    </section>
+
+  </main>
+  <footer>
+    <p>  Copyrigtht © by danielvaldivv </p>
+    <section class="index-footer">
+      <ul class="index-footer-contact">
+        <li><a href="https://www.linkedin.com/in/danielvaldivv/"><span><img src="../src/assets/icons/linkedin.svg" alt="Logo LinkedIn"></span></a></li>
+        <li><a href="https://github.com/danielvaldivv"><span><img src="../src/assets/icons/github.svg" alt="Logo GitHub"></span></a></li>
+        <li><a href="https://platzi.com/p/danielvaldivv/"><span><img src="../src/assets/icons/platzi.svg" alt="Logo Platzi"></span></a></li>
+        <li><a href="https://twitter.com/danielvaldivv/"><span><img src="../src/assets/icons/twitter.svg" alt="Logo Twitter"></span></a></li>
+      </ul>
+    </section>
+  </footer>
+  
+  <script src="../src/index.js"></script>
+</body>
+</html>
