@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('./footer.css');
 *{
   box-sizing: border-box;
   margin: 0;
@@ -38,8 +39,7 @@ h1{
   color: rgb(17, 22, 94)
 }
 h3{
-  margin: 12px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   max-width: 700px;
 }
 
@@ -88,5 +88,6 @@ a:active {
 }
 #solution{
   background-color: rgba(54, 74, 143, 0.5);
+  height: 140px;
   border-radius: 8px;
 }
