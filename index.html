@@ -14,30 +14,37 @@
     <h3>En este proyecto encontrarás una calculadora para encontrar responder a Qué es más económico, el cine o el streaming.</h3>
     <section class="container">
       <form action="">
-        <div>
-          <label for="movies">¿Cuántas películas ves al mes?</label>
-          <input type="number" id="movies" placeholder="Número de películas">
-        </div>
+        <section>
+          <div>
+            <label for="movies">¿Cuántas películas ves al mes?</label>
+            <input type="number" id="movies" placeholder="Número de películas">
+          </div>
+  
+          <div>
+            <label for="priceMovies">¿Qué costo tiene un ticket de cine en tu pais?</label>
+            <input type="number" id="priceMovies" placeholder="USD Price">
+          </div>
 
-      <div>
-        <label for="series">¿Cuántas series ves al mes?</label>
-        <input type="number" id="series"placeholder="Número de series">
-      </div>
+          <div>
+            <label for="series">¿Cuántas series ves al mes?</label>
+            <input type="number" id="series"placeholder="Número de series">
+          </div>
+        </section>
 
-      <section>
-        <p>¿En cuales plataformas de streaming puedes ver tus series o peliculas?</p>
+        <section>
+          <p>¿En cuales plataformas de streaming puedes ver tus series o peliculas?</p>
 
-        <div class="container__checkbox">
-          <input class="container__checkbox--element" type="checkbox" id="disney" value="true"> <label for="disney">Disney+ </label>          <br>
-          <input class="container__checkbox--element" type="checkbox" id="netflix" value="true"> <label for="netflix">Netflix </label>        <br>
-          <input class="container__checkbox--element" type="checkbox" id="amazon" value="true"> <label for="amazon">Amazon Prime  </label>    <br>
-          <input class="container__checkbox--element" type="checkbox" id="hbo"> <label for="hbo">HBO max  </label>
-        </div>
-      </section>
+          <div class="container__checkbox">
+            <input class="container__checkbox--element" type="checkbox" id="disney" value="true"> <label for="disney">Disney+ </label>          <br>
+            <input class="container__checkbox--element" type="checkbox" id="netflix" value="true"> <label for="netflix">Netflix </label>        <br>
+            <input class="container__checkbox--element" type="checkbox" id="amazon" value="true"> <label for="amazon">Amazon Prime  </label>    <br>
+            <input class="container__checkbox--element" type="checkbox" id="hbo"> <label for="hbo">HBO max  </label>
+          </div>
+        </section>
 
-      <button type="button" onclick="send()">Send</button>
-      <a href="./index.html">Borrar datos</a>
-    </form>
+        <button type="button" onclick="send()">Send</button>
+        <a href="./index.html">Borrar datos</a>
+      </form>
 
 
     <section id="solution">
