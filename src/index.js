@@ -48,8 +48,8 @@ const streamingPlatform = [
 
   //Insert text
   answerTitle.innerText = 'Respuesta';
-  streamingCost.innerText = 'El costo mensual es de ' + streamingPlatformCosts;
-  cineCost.innerText = 'El costo mensual es de ' + monthCineCost;
+  streamingCost.innerText = 'El costo mensual de streaming es de ' + streamingPlatformCosts;
+  cineCost.innerText = 'El costo mensual de cine es de ' + monthCineCost;
 
   if(monthCineCost == streamingPlatformCosts){
     answer.innerText = "Los valores ingresados no son validos";
