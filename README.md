@@ -15,5 +15,5 @@ The App will solve and you will get if is cheaper to use cine or Streaming Platf
 - netlify
 
 ## API's :globe_with_meridians:
-Internationalization
-DOM
+- Internationalization
+- DOM
