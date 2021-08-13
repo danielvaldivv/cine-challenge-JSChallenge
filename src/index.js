@@ -28,7 +28,7 @@ const streamingPlatform = [
 
 
   //Costs
-  const monthCineCost = numberMoviesValue * 3 ;
+  const monthCineCost = Math.floor(numberMoviesValue) * 3 ;
   let streamingPlatformCosts = 0;
   streamingPlatform.forEach(item => {
     if (item.value == true) {
@@ -65,8 +65,8 @@ const streamingPlatform = [
   // Remove Asyc Element
   setTimeout(() => {
     answerNode.remove(answerTitle, answer, streamingCost, cineCost);
-    // monthCineCost = 0;
-    // streamingPlatformCosts = 0;
-  }, 8000);
+    monthCineCost = 0;
+    streamingPlatformCosts = 0;
+  }, 10000);
 
   }
